@@ -1,60 +1,100 @@
-# 🍽️ Recipe Sharing Website
+# 🍽️ Recipe Sharing Website  
 
-## 📌 Project Overview
-The **Recipe Sharing Website** is a platform that allows users to discover, share, and organize their favorite recipes. Built using **React.js** for the frontend, this project aims to provide an interactive and user-friendly experience for cooking enthusiasts.
+## 📌 Overview  
+The **Recipe Sharing Website** is a platform where users can explore, share, and create recipes. It features a fully functional authentication system, categorized recipe collections, and an intuitive user interface for an enhanced experience.
 
-## 🚀 Features
-- 🔍 **Browse Recipes:** Users can explore a variety of recipes from different cuisines.
-- 📝 **Add & Share Recipes:** Users can submit their own recipes with images, ingredients, and instructions.
-- ❤️ **Save Favorites:** Users can bookmark their favorite recipes for easy access.
-- 🔎 **Search Functionality:** Easily find recipes based on keywords, ingredients, or categories.
-- 📱 **Responsive Design:** Fully optimized for mobile and desktop devices.
+## 🚀 Features  
+### 🔹 Frontend  
+- **Home Page**: Showcases featured recipes and collections.  
+- **User Authentication**: Login and registration system.  
+- **Recipe Management**: Create, view, and manage personal recipes.  
+- **User Profile**: Edit user information and manage saved recipes.  
+- **Categories & Collections**: Browse recipes by category and curated collections.  
+- **Responsive Design**: Ensures usability across devices.  
 
-## 🏗️ Tech Stack
-- **Frontend:** React.js, HTML, CSS, JavaScript
-- **Backend:** (Add backend details if applicable)
-- **Database:** (Mention database if applicable)
-- **Other Tools:** (Any additional libraries or tools used)
+### 🔹 Backend  
+- **User Authentication**: Handles registration and login.  
+- **Recipe Management**: CRUD operations for recipes.  
+- **Database Integration**: Uses MongoDB to store users and recipes.  
 
-## 📂 Project Structure
+## 📂 Project Structure  
+
 ```
 Recipe-Sharing-Website/
-│── frontend/        # Frontend (React.js)
-│   ├── public/
-│   ├── src/
-│   │   ├── components/  # Reusable UI components
-│   │   ├── pages/       # Page components
-│   │   ├── assets/      # Images and icons
-│   │   ├── App.js       # Main app file
-│   │   ├── index.js     # Entry point
-│   ├── .env             # Environment variables
-│   ├── .gitignore       # Git ignore file
-│   ├── package.json     # Dependencies and scripts
-│   ├── README.md        # Project documentation
+  ├── frontend/
+  |     ├── node_modules/
+  |     ├── public/
+  |     ├── src/
+  |     │   ├── components/
+  |     │   │   ├── home/ (Homepage components)
+  |     │   │   ├── layout/ (Navbar, Footer)
+  |     │   │   ├── recipe/ (RecipeList, RecipeDetails)
+  |     │   ├── context/ (AuthContext)
+  |     │   ├── pages/ (Authentication, Recipe Pages, Profile)
+  |     │   ├── services/ (API calls for auth & recipes)
+  |     │   ├── styles/ (Styling and themes)
+  |     │   ├── utils/ (Axios setup)
+  |     │   ├── App.jsx, Index.jsx (Main entry files)
+  ├── backend/
+  |     ├── models/ (User, Recipe models)
+  |     ├── routes/ (Users, Recipes API)
+  |     ├── .env (Environment variables)
+  |     ├── server.js (Backend server)
 ```
 
-## 🔧 Installation & Setup
-### Prerequisites
-Make sure you have **Node.js** and **npm/yarn** installed.
+## 🛠️ Tech Stack  
+### 💻 Frontend  
+- React.js  
+- Context API  
+- Axios  
+- Styled Components  
 
-### Steps to Run the Project
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/Tanishka-Jagtap/Recipe-Sharing-Website.git
-   ```
-2. **Navigate to the project directory:**
-   ```sh
-   cd Recipe-Sharing-Website/frontend
-   ```
-3. **Install dependencies:**
-   ```sh
-   npm install
-   ```
-4. **Start the development server:**
-   ```sh
-   npm start
-   ```
-5. Open **http://localhost:3000/** in your browser to see the app.
+### 🌐 Backend  
+- Node.js  
+- Express.js  
+- MongoDB  
+- JWT Authentication  
 
-🚀 *Happy Coding & Cooking!* 🍲
+## ⚡ Installation & Setup  
 
+### 🏗️ Clone the Repository  
+```bash
+git clone https://github.com/Tanishka-Jagtap/Recipe-Sharing-Website.git
+cd Recipe-Sharing-Website
+```
+
+### 🖥️ Frontend Setup  
+```bash
+cd frontend
+npm install
+npm start
+```
+
+### 🖥️ Backend Setup  
+```bash
+cd backend
+npm install
+npm start
+```
+
+## 📜 Environment Variables  
+Create a `.env` file in the backend directory with:  
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+
+## 🚀 Usage  
+- Sign up and log in to create your profile.  
+- Browse and filter recipes by category or collection.  
+- Add, edit, or delete your recipes.  
+- Save recipes to your profile for later use.  
+
+## 🤝 Contributing  
+Feel free to fork this repository and submit pull requests with improvements.  
+
+## 📄 License  
+This project is open-source and available under the MIT License.  
+
+🚀 Happy Coding & Cooking! 🍲
